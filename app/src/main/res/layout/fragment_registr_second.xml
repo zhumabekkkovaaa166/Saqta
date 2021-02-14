@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".auth.fragments.RegistrSecondFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/text"
+        android:text="Additional info"
+        android:textSize="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/salary"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Salary" />
+
+    <EditText
+        android:id="@+id/income"
+        android:layout_below="@+id/salary"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Additional income" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/income"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in" />
+
+</RelativeLayout>
